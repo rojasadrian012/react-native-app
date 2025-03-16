@@ -18,6 +18,7 @@ export interface User {
   price: string;
   paymentDate: string;
   observation?: string;
+  phone: string
 }
 
 export interface DataEntry {

@@ -15,44 +15,49 @@ export const dataEntry: DataEntry[] = [
     },
     users: [
       {
-        id:"1",
+        id: "1",
         name: "Gua'i Digitalvca0712",
         email: "digitalvca0712@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "01/04/2025",
+        phone: "595975853257"
       },
       {
-        id:"2",
+        id: "2",
         name: "Gua'i Gmwnff",
         email: "digitalvca0117@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
+        phone: ""
       },
       {
-        id:"3",
+        id: "3",
         name: "Gua'i Spotify0620",
         email: "digitalvca0620@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
+        phone: ""
       },
       {
-        id:"4",
+        id: "4",
         name: "Gua'i Digitalvca0709",
         email: "digitalvca0709@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
+        phone: ""
       },
       {
-        id:"5",
+        id: "5",
         name: "Gua'i Digitalvca0806",
         email: "digitalvca0806@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
+        phone: ""
       },
     ],
   },
@@ -70,44 +75,49 @@ export const dataEntry: DataEntry[] = [
     },
     users: [
       {
-        id:"6",
+        id: "6",
         name: "Abel",
         email: "asrilanka012@gmail.com",
         password: "Spotify2025#",
-        price: "₲ 80.000",
+        price: "₲ 15.000",
         paymentDate: "02/02/2025",
+        phone: ""
       },
       {
-        id:"7",
+        id: "7",
         name: "Bianca",
         email: "asrilanka012@gmail.com",
         password: "Spotify2025#",
-        price: "₲ 80.000",
+        price: "₲ 15.000",
         paymentDate: "02/02/2025",
+        phone: ""
       },
       {
-        id:"8",
+        id: "8",
         name: "Yessica Chamorro",
         email: "asrilanka012@gmail.com",
         password: "Spotify2025#",
-        price: "₲ 90.000",
+        price: "₲ 15.000",
         paymentDate: "02/02/2025",
+        phone: ""
       },
       {
-        id:"9",
+        id: "9",
         name: "Gua'i Digitalvca0629",
         email: "Digitalvca0629@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "02/02/2025",
+        phone: ""
       },
       {
-        id:"10",
+        id: "10",
         name: "Gua'i Digital vca0628",
         email: "digitalvca0628@outlook.com",
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "02/02/2025",
+        phone: ""
       },
     ],
   },
