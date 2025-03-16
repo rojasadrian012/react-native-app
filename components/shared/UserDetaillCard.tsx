@@ -2,6 +2,8 @@ import { Alert, Linking, Pressable, Text, View } from 'react-native';
 
 import { User } from '@/api';
 import { ThemedText, ThemedView } from '@/components';
+import { FontAwesome } from '@expo/vector-icons';
+import { useState } from 'react';
 
 interface Props {
   user: User
@@ -22,11 +24,13 @@ const sendMessage = (phoneNumber: string, message: string) => {
 };
 
 
-export default function AccountDetailCard({ user }: Props) {
+export default function UserDetailCard({ user }: Props) {
+  const [checked, setChecked] = useState(false)
+
   return (
     <View key={user.id} className='w-full rounded-lg border border-black pt-6 pb-3 px-4 dark:border-white mb-4'>
       <View className='flex-row justify-between mb-4'>
-        <ThemedText type='defaultSemiBold'>{user.name}</ThemedText>
+        <ThemedText type='subtitle'>{user.name}</ThemedText>
         <ThemedText>{user.paymentDate}</ThemedText>
       </View>
       <ThemedText>Correo: {user.email}</ThemedText>
@@ -40,7 +44,18 @@ export default function AccountDetailCard({ user }: Props) {
               `Hola ${user.name}, llegó su fecha de pago.\nAvísame cuando hayas realizado el pago.\n¡Gracias!`
             )
           }>
-          <Text className='text-black dark:text-white'>Enviar Mensaje</Text>
+          <Text className='text-black dark:text-white font-bold'>Enviar Mensaje</Text>
+        </Pressable>
+        <Pressable
+          onPress={() => setChecked(!checked)}
+          className='rounded-full p-3 border border-black dark:border-white'
+        >
+          {checked
+            ?
+            <FontAwesome name="check" size={24} color="green" />
+            :
+            <FontAwesome name="check" size={24} color="gray" />
+          }
         </Pressable>
         <ThemedText type='defaultSemiBold'>{user.price}</ThemedText>
       </View>

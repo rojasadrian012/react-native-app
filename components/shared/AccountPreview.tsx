@@ -12,7 +12,6 @@ export default function AccountPreview({ account }: Props) {
     return (
         <Link href={`/${account.id}`} asChild>
             <Pressable
-                onPress={() => console.log(`/${account.id}`)}
                 className='w-full rounded-lg border border-black py-6 px-4 dark:border-white'
             >
                 <View className='flex-row justify-between'>
