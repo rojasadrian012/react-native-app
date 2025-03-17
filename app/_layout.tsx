@@ -8,6 +8,8 @@ import 'react-native-reanimated';
 import "../global.css"
 
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { SQLiteProvider } from 'expo-sqlite';
+import { migrateDbIfNeeded } from '@/api/database/database';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -30,12 +32,14 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="[id]" options={{headerShown: false}} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
+      <SQLiteProvider databaseName="accounts.db" onInit={migrateDbIfNeeded}>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="[id]" options={{ headerShown: false }} />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+        <StatusBar style="auto" />
+      </SQLiteProvider>
     </ThemeProvider>
   );
 }

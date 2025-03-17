@@ -21,7 +21,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "01/04/2025",
-        phone: "595975853257"
+        phone: "595975853257",
+        accountId: ""
       },
       {
         id: "2",
@@ -30,7 +31,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "3",
@@ -39,7 +41,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "4",
@@ -48,7 +51,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "5",
@@ -57,7 +61,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "06/01/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
     ],
   },
@@ -81,7 +86,8 @@ export const dataEntry: DataEntry[] = [
         password: "Spotify2025#",
         price: "₲ 15.000",
         paymentDate: "02/02/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "7",
@@ -90,7 +96,8 @@ export const dataEntry: DataEntry[] = [
         password: "Spotify2025#",
         price: "₲ 15.000",
         paymentDate: "02/02/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "8",
@@ -99,7 +106,8 @@ export const dataEntry: DataEntry[] = [
         password: "Spotify2025#",
         price: "₲ 15.000",
         paymentDate: "02/02/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "9",
@@ -108,7 +116,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "02/02/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
       {
         id: "10",
@@ -117,7 +126,8 @@ export const dataEntry: DataEntry[] = [
         password: "spotify2024",
         price: "₲ 10.000",
         paymentDate: "02/02/2025",
-        phone: ""
+        phone: "",
+        accountId: ""
       },
     ],
   },

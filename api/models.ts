@@ -18,7 +18,8 @@ export interface User {
   price: string;
   paymentDate: string;
   observation?: string;
-  phone: string
+  phone: string,
+  accountId: string,
 }
 
 export interface DataEntry {

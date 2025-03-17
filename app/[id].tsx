@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Alert, Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 
-import { DataEntry, getAccountById } from '@/api';
+import { DataEntry, getAccountById, User } from '@/api';
 import { ThemedText, ThemedView } from '@/components';
 import UserDetailCard from '@/components/shared/UserDetaillCard';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
